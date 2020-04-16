@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>首页</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/public.css">
+        <link rel="stylesheet" href="css/index.css">
+    <!-- <style>
+        .maxWh{
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo a img{
+            width: auto;
+            height: 40px;
+            margin: 50px 0;
+        }
+        .menu ul li{
+            float:left;
+            margin-left: 75px;
+        }
+        .menu ul li a{
+            line-height: 140px;
+        }
+        .main .contentBox{
+            padding: 55px 0;
+        }
+        .main .contentBox .jwInfo{
+            width: 60%;
+            height: 410px;
+            padding: 15px;
+            box-sizing: border-box;
+            background-color: rgba(249,251,254,1);
+        }
+        .titleLeft>p{
+            margin-bottom: 10px;
+        }
+        .titleLeft .titleEn{
+            font-size: 18px;
+            color: #E0E0E0;
+        }
+        .titleLeft .titleZh{
+            font-size: 24px;
+            color: #333333;
+        }
+        .titleLeft .titleLine{
+            width: 20px;
+            height: 4px;
+            background-color: blue;
+        }
+        .main .contentBox .jwInfo .infoText{
+            width: 50%;
+            text-indent: 2em;
+            font-size: 12px;
+            color:#333;
+            margin-left: 14%;
+            line-height: 20px;
+        }
+        .mobileImg{
+            display: none;
+        }
+        .main .contentBox .jwVideo{
+            width: 46%;
+            position: absolute;
+            top:50%;
+            right:0;
+            z-index: 10;
+            transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+        }
+        .gongXian{
+            padding: 20px 0;
+            margin-top: 50px;
+            background-color: #186eff;
+        }
+        .titleCenter>p{
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        .titleCenter .titleEn{
+            font-size: 18px;
+            color: #5a94f8;
+        }
+        .titleCenter .titleZh{
+            font-size: 24px;
+            color: #fff;
+        }
+        .titleCenter .titleLine{
+            width: 20px;
+            height: 4px;
+            margin:0 auto 10px auto;
+            background-color: #fff;
+        }
+        .gongXianList{
+            margin-top: 40px;
+        }
+        .gongXianList ul li{
+            float:left;
+            width: 33.3%;
+            margin-bottom: 30px;
+        }
+        .gongXianList ul li .listItem{
+            width: 180px;
+            height: 180px;
+            padding: 6%;
+            cursor: pointer;
+            box-sizing: border-box;
+            text-align: center;
+            border:1px solid #19a3bf;
+        }
+        .gongXianList ul li:first-child+li .listItem{
+            margin: 0 auto;
+        }
+        .gongXianList ul li:first-child+li+li .listItem{
+            float:right;
+        }
+        .gongXianList ul li:first-child+li+li+li .listItem{
+            float:left;
+        }
+        .gongXianList ul li:first-child+li+li+li+li .listItem{
+            margin: 0 auto;
+        }
+        .gongXianList ul li:first-child+li+li+li+li+li .listItem{
+            float:right;
+        }
+        .gongXianList ul li .listItem p{
+            color:#fff;
+            margin-bottom: 10px;
+        }
+        .gongXianList ul li .listItem p img{
+            height: 60px;
+            margin: 0 auto;
+        }
+        .gongXianList ul li .listItem p:first-child+p{
+            font-size: 14px;
+        }
+        .gongXianList ul li .listItem p:first-child+p+p{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .gongXianList ul li .listItem:hover{
+            border:1px solid #ea9901;
+            background-color: #ea9901;
+        }
+        .gongXianList ul li .listItem:hover p{
+            color:#333;
+        }
+        @media only screen and (max-width: 1280px) {
+            .main .contentBox{
+                padding: 55px 15px;
+                box-sizing: border-box;
+            }
+            .main .contentBox .jwInfo .infoText{
+                width: 70%;
+                margin-left: 10%;
+            }
+            .main .contentBox .jwVideo{
+                right: 15px;
+            }
+            .gongXian{
+                padding: 20px 15px;
+            }
+            .gongXianList ul li .listItem{
+                width: 160px;
+                height: 160px;
+            }
+            .gongXianList ul li .listItem p img{
+                height:50px;
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            .titleLeft .titleEn{
+                font-size: 14px;
+                color: #E0E0E0;
+            }
+            .titleLeft .titleZh{
+                font-size: 18px;
+                color: #333333;
+            }
+            .titleCenter .titleEn{
+                font-size: 14px;
+                color: #5a94f8;
+            }
+            .titleCenter .titleZh{
+                font-size: 20px;
+                color: #fff;
+            }
+            .header{
+                padding: 0 15px;
+            }
+            .main .contentBox{
+                padding: 55px 15px;
+                box-sizing: border-box;
+            }
+            .main .contentBox .jwInfo{
+                width: 100%;
+                height: auto;
+            }
+            .main .contentBox .jwInfo .infoText{
+                width: 100%;
+                margin:30px 0 0 0;
+            }
+            .jwVideo{
+                display: none;
+            }
+            .mobileImg{
+                width: 90%;
+                display: block;
+                margin: 20px auto;
+            }
+            .gongXian{
+                margin-top: 0;
+            }
+            .gongXianList ul li{
+                width: 50%;
+                margin-bottom: 20px;
+            }
+            .gongXianList ul li .listItem{
+                float: none !important;
+                margin: 0 auto;
+                width: 90%;
+                height: auto;
+                padding: 10%;
+            }
+            .gongXianList ul li .listItem p img{
+                height:40px;
+            }
+            .gongXianList ul li .listItem p:first-child+p+p{
+                font-size: 18px;
+            }
+        }
+    </style> -->
+    </head>
+    <body>
+    <div class="header">
+        <div class="maxWh clearfix">
+            <div class="logo float_lf"><a href="index.html"><img src="image/logo.png" alt=""></a></div>
+            <div class="menu float_rt">
+                <ul class="clearfix">
+                    <li><a class="current" href="index.html">首页</a></li>
+                    <li><a href="business_index.html">业务中心</a></li>
+                    <li><a href="project.html">项目展示</a></li>
+                    <li><a href="news.html">新闻资讯</a></li>
+                    <li><a href="aboutUs.html">关于我们</a></li>
+                    <li><a href="cooperation.html">商务合作</a></li>
+                </ul>
+                <div class="icon">〓</div>
+            </div>
+        </div>
+
+    </div>
+    <div class="main">
+        <!--banner-->
+        <div class="banner2">
+            <p>共享光伏新能源，共享绿色新财富</p>
+            <img src="image/banner.png" width="100%" alt="">
+        </div>
+        <!--金乌介绍-->
+        <div class="contentBox maxWh position-r clearfix">
+            <div class="jwInfo">
+                <div class="titleLeft">
+                    <p class="titleEn">INTRODUCTION OF JIN WU</p>
+                    <p class="titleZh">金乌介绍</p>
+                    <p class="titleLine"></p>
+                </div>
+                <div class="infoText">
+                    <p>金乌科技总部坐落于国家级光伏产业基地-&#45;&#45;&#45;&#45;河北省邢台市开发区，注册资金5000万元，经过多年的深入研究，高速发展，目前金乌科技具备光伏电站研发、生产、设计、施工、运维、销售、储能、电力交易等全产业链整合服务能力。</p>
+                    <p>金乌科技是我国最早一批“光伏+互联网”、“光伏+储能”的倡导者和实践者，金乌科技先后在北京、石家庄成立研发中心和运营中心，利用互联网、物联网、区块链、大数据、人工智能等综合技术研发成功了光伏电站资产在线交易结算平台、光伏电站智能运维平台、光伏+储能微电网能源管理系统以及电力交易平台，以最前沿的姿态迎接光伏平价时代，力争打造世界一流的新能源互联网平台。</p>
+                    <img class="mobileImg" src="image/low-angle-view-of-office-building-against-sky-313736.png" width="100%" alt="">
+                </div>
+            </div>
+            <div class="jwVideo">
+                <img src="image/low-angle-view-of-office-building-against-sky-313736.png" width="100%" alt="">
+            </div>
+        </div>
+        <!--社会贡献-->
+        <div class="gongXian">
+            <div class="maxWh">
+                <div class="titleCenter">
+                    <p class="titleEn">SOCIAL CONTRIBUTION</p>
+                    <p class="titleZh">社会贡献</p>
+                    <p class="titleLine"></p>
+                </div>
+                <div class="gongXianList">
+                    <ul class="clearfix">
+                        <li class="clearfix">
+                            <div class="listItem">
+                                <p><img src="image/station_icon.png" alt=""></p>
+                                <p>建设电站</p>
+                                <p>48mw</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="listItem">
+                                <p><img src="image/earnings_icon.png" alt=""></p>
+                                <p>累计收益额</p>
+                                <p>8..27亿元</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="listItem">
+                                <p><img src="image/construction_icon.png" alt=""></p>
+                                <p>累计发电量</p>
+                                <p>77690.65MW</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="listItem">
+                                <p><img src="image/save_icon.png" alt=""></p>
+                                <p>节约煤炭</p>
+                                <p>3107万吨</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="listItem">
+                                <p><img src="image/carbon_icon.png" alt=""></p>
+                                <p>碳减排</p>
+                                <p>7769万吨</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="listItem">
+                                <p><img src="image/vegetation_icon.png" alt=""></p>
+                                <p>植被</p>
+                                <p>1.4亿颗</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <img id="footer_img" style="width: 100%;" src="image/footer.png">
+        <div class="footer_text">
+            <div class="footer_conter">
+                <div class="content">
+                    <div class="en_title">Contact Us</div>
+                    <div class="ch_title">联系我们</div>
+                    <img src="image/电话.png"><p>电话：17631123590</p>
+                    <img src="image/地址.png"><p>河北省石家庄市建华大街万达写字楼B座2008室</p>
+                    <img src="image/地址.png"><p>河北省邢台市开发区永安南路1999号吉杰工业团</p>
+                </div>
+                <div class="erwei">
+                    <img src="image/code.jpg">
+                    <p>扫描关注公众号</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>金乌科技有限公司  ICP备案号：16839869469</p>
+            </div>
+        </div>
+    </div>
+        <script src="js/jquery-1.8.3.js"></script>
+        <script src="js/public.js"></script>
+    </body>
+</html>

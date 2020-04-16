@@ -1,0 +1,758 @@
+.banner {
+    position: relative;
+}
+/* business */
+.banner_content {
+    color: #ffffff;
+    font-size: 24px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    width: 70%;
+    color: #ffffff;
+}
+.banner_content .content_left{
+    float: left;
+    width: 60%;
+}
+
+.banner_content .content_right{
+    float: right;
+    margin: 20px;
+}
+.business_menu{
+    font-size: 16px;
+    line-height: 50px;
+}
+.business_menu a{
+    color: #ffffff;
+}
+.business_menu img{
+    float: right;
+    margin: 15px;
+}
+
+.contetn {
+    display: none;
+}
+.index_title{
+    color: #ffffff;
+    font-size: 24px;
+}
+.current{
+    display: block;
+   }
+.index_titleLine {
+    width: 20px;
+    height: 2px;
+    background-color: #FFFFFF ;
+    margin-top: 10px;
+}
+
+.index_induction{
+    color: #ffffff;
+    font-size: 16px;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.contetn .button{
+    color: #ffffff;
+    font-size: 16px;
+    margin: 10%;
+    text-align: center;
+    line-height: 37px;
+    width:127px;
+    height:40px;
+    background:rgba(52,188,74,1);
+    border-radius:20px;
+
+}
+
+.banner .page_title{
+    color: #ffffff;
+    font-size: 36px;
+    line-height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.titleLine {
+    width: 20px;
+    height: 2px;
+    margin: 0 auto 10px auto;
+    background-color: #FFFFFF ;
+}
+.introduce {
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 40px 15px 15px 15px; 
+}
+.introduce_text {
+    color: #333333;
+    font-size: 14px;
+    line-height: 25px;
+    text-indent: 2em
+}
+
+.introduce .progect {
+    max-width: 992px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.project_energy{
+    width: 33%;
+    float: left;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.project_energy .number{
+    font-size: 30px;
+    color: #176EFF;
+}
+.project_energy .title {
+    color: #176EFF;
+    font-size: 14px;
+    line-height: 30px;
+}
+.project_energy .subtitle {
+    color: #333333;
+    font-size: 14px;
+    height: 70px;
+    line-height: 20px;
+    margin-top: 10px;
+
+}
+.project_energy .description {
+    color: #333333;
+    font-size: 12px;
+    text-align: left;
+    text-indent: 2em;
+    margin: 0 auto; 
+    line-height: 20px;
+    max-width: 240px;
+    margin-bottom: 30px;
+}
+
+.shoudian_chid {
+    float: left;
+    text-align: center;
+    width: 16.6%;
+    margin: 30px auto 30px auto;
+}
+
+.shoudian_chid p {
+    font-size: 10px;
+    color: #5A5858;
+}
+
+.operation_progect {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.operation_progect p {
+    text-align: center;
+    font-size: 10px;
+    color:  #999999 ;
+    margin-bottom: 30px;
+}
+.platform {
+    float: left;
+    text-align: center;
+    width: 25%;
+    margin: 30px auto 10px auto;
+}
+
+.opreation_introduce {
+    color: #333333;
+    font-size: 12px;
+    line-height: 20px;
+    text-indent: 2em;
+    margin-bottom: 60px;
+}
+
+.produce{
+    max-width: 992px;
+    margin: 0 auto;
+}
+.produce_patent{
+    float: left;
+    text-align: center;
+    width: 100%;
+    margin: 30px auto 30px auto;
+}
+.rent{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto 50px auto;
+}
+
+.rent p{
+    font-size: 12px;
+    color: #333333;
+}
+
+.rent .leftpart {
+    width: 30%;
+    float: left;
+
+}
+
+.rent_icon{
+    display: inline-block;
+    margin-top: 10px;
+    color: #3B70FC;
+    font-size: 40px;
+}
+.rent .rightpart {
+    width: 30%;
+    float: right;
+    
+}
+
+/* about us */
+.banner_introduction {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(5,54,136,0.21);
+    padding: 60px;
+    margin: 0 auto;
+}
+
+.banner_introduction_min{
+    display: none;
+}
+.banner_introduction p{
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 25px;
+    text-indent: 2em;
+}
+
+.partner_title{
+    margin: 0 auto 40px auto; 
+    text-align: center;
+    color: #1F73FF;
+    font-size: 28px;
+    line-height: 60px;
+}
+
+.partner_title .titleLine{
+    width: 20px;
+    height: 2px;
+    background-color: #1F73FF ;
+}
+.partner_icon{
+    width: 25%;
+    height: 77px;
+    float: left;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.partner_icon img{
+    display: inline;
+}
+
+/* 项目展示 */
+
+.project{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner .banner_title{
+    color: #10C1FF ;
+    font-size: 16px;
+    line-height: 30px;
+    position: absolute;
+    left: 35%;
+    top: 70%;
+    transform: translate(-65%, -30%);
+}
+.banner .banner_title p{
+    color: #10C1FF ;
+    font-size: 12px;
+    line-height: 20px;
+}
+.project_title{
+    max-width: 1200px;
+    margin: 50px auto 0px auto;
+    font-size: 16px;
+    color: #333333;
+}
+.project_chid{
+    float: left;
+    text-align: center;
+    width: 25%;
+    margin: 10px auto 20px auto;
+}
+
+
+.project_chid p {
+    color: #999999;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+/* 商务合作 */
+
+.banner .partner_title img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form{
+    width: 50%;
+    margin: 50px auto;
+    padding: 42px;
+    height: 432px;
+    background-color: #ECECEC;  
+    
+}
+
+.infomation{
+    width: 45%;
+    float: left;
+    height: 90%;
+}
+
+.infomation_title{
+    color:  #176EFF;
+    font-size: 16px;
+    line-height: 70px;
+}
+
+.infomation input{
+    width: 304px;
+    height: 48px;
+    margin-bottom: 30px;
+    color: #333333;
+    font-size: 14px;
+    padding-left: 21px;
+    border: 1px solid #D4D4D4;
+}
+
+.infomation .note{
+    font-size: 12px;
+    color: #666666;
+}
+
+.message {
+    width: 55%;
+    float: right;
+    height: 90%;
+}
+.message textarea {
+    width: 90%;
+    height: 204px;
+    color: #333333;
+    font-size: 14px;
+    border: 1px solid #D4D4D4;
+}
+
+.form .btn{
+    width: 182px;
+    height: 42px;
+    color: #FFFEFE;
+    font-size: 16px;
+    background-color: #176EFF;
+    margin-top: 32px;
+    margin-right: 53px;
+    float: right;
+    border: none;
+}
+
+/* 新闻资讯 */
+.page_title span{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.news_introduce {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 40px 15px 15px 15px;
+}
+
+.news_list{
+    height: 170px;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #E6E6E6;
+    
+}
+
+.news_introduce :hover{
+    background:rgba(240,240,240,1);
+}
+
+.news_img{
+    margin-right: 15px;
+    width: 20%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 170px;
+}
+
+.news_info{
+    width: 77%;
+    float: right;
+}
+.news_tite{
+    color: #333333;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.news_date{
+    font-size: 12px;
+    color: #969696;
+    line-height: 30px;
+}
+
+.news_text {
+    font-size: 14px;
+    color: #646464;
+    line-height: 25px;
+}
+
+.news_btn {
+    line-height: 28px;
+    color: #333333 ;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 15px;
+    background-color: #E6E6E6;
+    width: 100px;
+    height: 30px;
+}
+
+.news_btn:hover{
+    line-height: 28px;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 15px;
+    background-color: #176EFF;
+    width: 100px;
+    height: 30px;
+}
+
+/* 资讯详情 */
+.news_detail{
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #333333;
+    padding: 60px;
+}
+
+.news_detail img {
+    max-width: 1200px;
+}
+
+.news_detail .title {
+    font-size: 18px;
+    line-height: 45px;
+}
+
+.news_detail .date{
+    font-size: 12px;
+    color: #666666;
+    line-height: 30px;
+}
+
+.news_detail .content{
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+}
+
+@media only screen and (max-width: 800px) {
+    .project_energy{
+        width: 100%;
+    }
+
+    .shoudian_chid {
+        width: 33%;
+    }
+    .banner .page_title{
+        font-size: 18px;
+        line-height: 50px;
+    }
+    .platform {
+        width: 50%;
+    }
+/* about us */
+    .partner_icon{
+        width: 50%;
+        height: 77px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .project_chid{
+        width: 50%;
+    }
+
+    .project_title{
+        text-align: center;
+        line-height: 80px;
+        font-size: 18px;
+    }
+    .project img{
+        display: inline;
+    } 
+    .banner_introduction{
+        width: 80%;
+    }
+    .form {
+        width: 80%;
+    }    
+}
+
+@media only screen and (max-width: 608px) {
+    .shoudian_chid {
+        width: 50%;
+    }
+    .project_chid{
+        width: 100%;
+        margin: 0 auto;
+        float: none;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    .project img{
+        display: inline;
+        width: 90%;
+    } 
+    .project_title{
+        text-align: center;
+    }
+    
+    .banner .page_title{
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .banner_introduction{
+        padding: 30px;
+    }
+
+    .news_list{
+        height: 180px;
+    }
+    .form{
+        width: 70%;
+    }
+
+    .banner .banner_title{
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .banner .banner_title p{
+        font-size: 10px;
+        line-height: 16px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* 关于我们 */
+    .banner_introduction{
+        display: none;
+    }
+
+    .banner_introduction_min {
+        display: block;
+        color: #053688;
+        padding: 20px 15px 0px 15px;
+    }
+
+    .banner_introduction_min p{
+        color: #333333;
+        font-size: 14px;
+        line-height: 25px;
+        text-indent: 2em;
+    }
+
+    .project img{
+        display: inline;
+        width: 90%;
+    }  
+    /* 新闻资讯 */
+    .news_list{
+        height: 200px;
+    }
+    /* 商务合作 */
+
+    .form {
+        width: 90%;
+        margin: 50px 15px;
+        padding: 20px;
+        height: 350px;
+    }
+
+    .infomation{
+        width: 35%;
+        float: left;
+    }
+    .message {
+        width: 45%;
+        float: right;
+    }
+    .message textarea {
+        width: 260px;
+        height: 170px;
+    }
+
+    .form input {
+        width: 250px;
+        height: 33px;
+        margin-bottom: 20px;
+        color: #333333;
+        font-size: 14px;
+        padding-left: 21px;
+        border: 1px solid #D4D4D4;
+    }
+    
+    .form .btn{
+        width: 100px;
+        height: 30px;
+    }
+
+    .banner .banner_title{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .banner .banner_title p{
+        font-size: 8px;
+        line-height: 14px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    /* 新闻资讯 */
+
+    .page_title span{
+        color: #ffffff;
+        font-size: 12px;
+    }
+    
+    .news_introduce {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 40px 15px 15px 15px;
+    }
+    
+    .news_list{
+        width: 100%;
+        padding: 15px;
+        background: #ffffff;
+        margin-bottom: 20px;
+        height: 400px;
+    }
+    
+    .news_img{
+        width: 100%;
+        max-width: 248px;
+        margin-right: 15px;
+    }
+    
+    .news_info{
+        width: 100%;
+    }
+    .news_tite{
+        color: #333333;
+        font-size: 18px;
+        line-height: 40px;
+    }
+    
+    .news_date{
+        font-size: 12px;
+        color: #969696;
+        line-height: 30px;
+    }
+    
+    .news_text {
+        font-size: 14px;
+        color: #646464;
+        line-height: 25px;
+    }
+    
+    .news_btn {
+        line-height: 28px;
+        color: #ffffff;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 15px;
+        background-color: #176EFF;
+        width: 100px;
+        height: 30px;
+    }
+
+    /* 商务合作 */
+
+    .form {
+        margin: 50px 15px;
+        padding: 20px;
+        height: 460px;
+        width: 85%;
+        background-color: #ECECEC;
+    }
+
+    .infomation{
+        width: 100%;
+        height: 45%;
+        float: none;
+    }
+    
+    .infomation_title{
+        color:  #176EFF;
+        font-size: 14px;
+        line-height: 50px;
+    }
+    .infomation input{
+        height: 28px;
+        margin-bottom: 15px;
+    }
+    .message {
+        width: 100%;
+        height: 40%;
+        float: none;
+    }
+    .message textarea {
+        width: 300px;
+        height: 120px;
+        color: #333333;
+        font-size: 14px;
+    }
+    
+    .form .btn{
+        width: 100px;
+        height: 30px;
+        color: #FFFEFE;
+        font-size: 16px;
+        background-color: #176EFF;
+        margin-bottom: 32px;
+        margin-right: 0px;
+        float: none;
+    }
+
+}
+
+
+

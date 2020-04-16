@@ -1,0 +1,260 @@
+.maxWh{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo {
+    margin-left: 15px;
+}
+.menu {
+    margin-right: 15px;
+}
+.logo a img{
+    width: auto;
+    height: 40px;
+    margin: 50px 0;
+}
+.menu ul li{
+    float:left;
+    margin-left: 75px;
+    font-size: 18px;
+    color: #333333;
+}
+.menu ul li a{
+    line-height: 140px;
+}
+
+.menu .icon{
+    position: absolute;
+    display: none;
+    right: 15px;
+    font-size: 30px;
+    color: #5a94f8;
+}
+
+.menu ul li .current{
+    color: #176EFF;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+/*底部*/
+.footer {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    max-height: 470px;
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+.footer .footer_text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 50px;
+}
+.footer_conter{
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px dotted #ffffff;
+    color: #ffffff;
+    height: 320px;
+}
+.footer_conter .content{
+    padding: 40px 0 20px 15px;
+    width: 60%;
+    float: left
+}
+.footer_conter h3{
+    height: 40px;
+    line-height: 40px;
+}
+.footer_conter .content .en_title{
+    font-size: 18px;
+    color: #ffffff;
+}
+.footer_conter .content .ch_title{
+    font-size: 24px;
+    color: #ffffff;
+    padding: 10px 0px 20px 0px;
+}
+.footer_conter .content p{
+    height: 50px;
+    line-height: 35px;
+    font-size: 12px;
+}
+.footer_conter .erwei{
+    float: right;
+    padding-top: 64px;
+}
+.footer_conter .erwei p{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 12px;
+}
+.footer_conter img {
+    float: left;
+    margin-right: 20px;
+}
+
+.footer_conter .erwei img{
+    margin-bottom: 20px;
+    width: 179px;
+}
+.copyright p{
+    margin-top: 15px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .menu ul li {
+        margin-left: 47px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .menu ul li {
+        margin-left: 47px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .titleLeft .titleEn{
+        font-size: 14px;
+        color: #E0E0E0;
+    }
+    .titleLeft .titleZh{
+        font-size: 18px;
+        color: #333333;
+    }
+    .titleCenter .titleEn{
+        font-size: 14px;
+        color: #5a94f8;
+    }
+    .titleCenter .titleZh{
+        font-size: 20px;
+        color: #fff;
+    }
+    .header{
+        padding: 0 15px;
+    }
+
+    .menu .icon{
+        display: block;
+        margin-top: 50px;
+    }
+
+    .menu ul{
+        position: absolute;
+        top: 100px;
+        padding-left: 0px;
+        right: 10px;
+        z-index: 9999;
+    }
+    .menu ul li{
+        float:none;
+        background-color: #5a94f8;
+        margin-bottom: 5px;
+        margin-left: 75px;
+        width: 90px;
+        height: 35px;
+        text-align: center;
+        border-radius: 5px;
+
+    }
+    .menu ul li a{
+        line-height: 40px;
+        color: #ffffff;
+    }
+
+    .menu ul li:hover{
+        color:#176EFF;
+        opacity: 0.9;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .footer_conter .content p{
+        line-height: 25px;
+    }
+
+    .footer {
+        max-height: 640px;
+    }
+
+    .footer_conter {
+        height: 540px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .footer_conter .erwei{
+        float: left;
+        padding-top: 10px;
+        padding-left: 15px;
+    }
+    .footer_conter .erwei img{
+        margin-left: 20px;
+    } 
+    .footer_conter .content {
+        padding: 40px 0px 0px 15px;
+        width: 100%;
+        margin: 0 auto;
+    } 
+    .footer .footer_text {
+        top: 45%;
+    }
+    
+}
+
+/* alert弹框样式 */
+#msg{
+    width:266px;
+    position: fixed;
+    z-index:999;
+    top: 49%;
+    margin-top:-80px;
+    left:50%;
+    margin-left:-133px;
+    background:#fff;
+    box-shadow:5px 5px 8px #999;
+    font-size:17px;
+    color:#666;
+    border:1px solid #f8f8f8;
+    text-align: center;
+    line-height: 2rem;
+    display:inline-block;
+    padding-bottom:20px;
+    border-radius:2px;
+}
+#msg_top{
+    background:#f8f8f8;
+    padding:5px 15px 5px 20px;
+    text-align:left;
+}
+#msg_top span{
+    font-size:22px;
+    float:right;
+    cursor:pointer;
+}
+#msg_cont{
+    padding:15px 20px 20px;
+    text-align:left;
+}
+#msg_clear{
+    display:inline-block;
+    color:#fff;
+    padding:1px 15px;
+    background:#176EFF;
+    border-radius:2px;
+    float: right;
+    margin-right:15px;
+    cursor:pointer;
+}

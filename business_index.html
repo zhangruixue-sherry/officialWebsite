@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>业务中心</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/public.css">
+        <link rel="stylesheet" href="css/buinsee.css">
+    </head>
+    <body>
+    <div class="header">
+        <div class="maxWh clearfix">
+            <div class="logo float_lf"><a href="#"><img src="image/logo.png" alt=""></a></div>
+            <div class="menu float_rt">
+                <ul class="clearfix">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a class="current" href="business_index.html">业务中心</a></li>
+                    <li><a href="project.html">项目展示</a></li>
+                    <li><a href="news.html">新闻资讯</a></li>
+                    <li><a href="aboutUs.html">关于我们</a></li>
+                    <li><a href="cooperation.html">商务合作</a></li>
+                </ul>
+                <div class="icon">〓</div>
+            </div>
+        </div>
+    </div>
+        <div class="main">
+            <div class="banner">
+                
+                <img style="width: 100%;" src="image/businsee_index.png">
+                <div class="banner_content"  >
+                    <div class="content_left" id="pageContain">
+                        <div class="contetn current">
+                            <div class="index_title">
+                                金乌生产
+                                <p class="index_titleLine"></p>
+                            </div>
+                            <div class="index_induction">
+                                <p>金乌具备自主研发生产光伏组件的能力，获得各种认证和专利。</p>
+                            </div>
+                            <div class="button">
+                                <p>查看详情</p>
+                            </div>
+                        </div>
+
+                        <div class="contetn">
+                            <div class="index_title">
+                                金乌运维
+                                <p class="index_titleLine"></p>
+                            </div>
+                            <div class="index_induction">
+                                <p>金乌科技针对光伏行业运维成本高、不及时、数据不准确等行业难题，利用大数据和物联网技术。</p>
+                            </div>
+                            <div class="button">
+                                <p>查看详情</p>
+                            </div>
+                        </div>
+
+                        <div class="contetn">
+                            <div class="index_title">
+                                金乌租售
+                                <p class="index_titleLine"></p>
+                            </div>
+                            <div class="index_induction">
+                                <p>金乌科技近几年一直积极推动新能源互联网化运营以及光伏新能源资产数字化交易，通过近9年的光伏行业全产业链从业经历，深入了解光伏电站从生产到收益的各个环节，通过线上运</p>
+                            </div>
+                            <div class="button">
+                                <p>查看详情</p>
+                            </div>
+                        </div>
+
+                        <div class="contetn">
+                            <div class="index_title">
+                                金乌储能
+                                <p class="index_titleLine"></p>
+                            </div>
+                            <div class="index_induction">
+                                <p>金乌具备自主研发生产光伏组件的能力，获得各种认证和专利。获得各种认证和专利</p>
+                            </div>
+                            <div class="button">
+                                <p>查看详情</p>
+                            </div>
+                        </div>
+
+                        <div class="contetn">
+                            <div class="index_title">
+                                金乌售电
+                                <p class="index_titleLine"></p>
+                            </div>
+                            <div class="index_induction">
+                                <p>金乌具备自主研发生产光伏组件的能力，获得各种认证和专利。自主研发生产光伏组件的</p>
+                            </div>
+                            <div class="button">
+                                <p>查看详情</p>
+                            </div>
+                        </div>
+
+                        <div class="contetn">
+                            <div class="index_title">
+                                金乌开发
+                                <p class="index_titleLine"></p>
+                            </div>
+                            <div class="index_induction">
+                                <p>金乌具备自主研发生产光伏组件的能力，获得各种认证和专利。金乌具备自主研发生产光伏组件的金乌具备自主研发生产光伏组件的</p>
+                            </div>
+                            <div class="button">
+                                <p>查看详情</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_right">
+                        <ul class="business_menu" id="article">
+                            <li><a href="business_produce.html">金乌生产<img src="image/menu_icon.png"></a></li>
+                            <li><a href="business_operation.html">金乌运维<img src="image/menu_icon.png"></a></li>
+                            <li><a href="business_rentSale.html">金乌租售<img src="image/menu_icon.png"></a></li>
+                            <li><a href="business_engry.html">金乌储能</a></li>
+                            <li><a href="business_sellingElectricity.html">金乌售电</a></li>
+                            <li><a href="business_development.html">金乌开发</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>   
+        <script src="js/jquery-1.8.3.js"></script>
+        <script src="js/public.js"></script>
+        <script type="text/javascript" src="js/fullPage.min.js"></script>
+        <script>
+            var runPage,
+	runPage2,
+    interval,
+    autoPlay;
+
+autoPlay = function(to) {
+
+    clearTimeout(interval);
+    interval = setTimeout(function() {
+        runPage.go(to);
+    }, 5000);
+
+}
+  
+  runPage = new FullPage({
+    
+   id : 'pageContain',       // 容器id
+   slideTime : 1000,        // 每页切换时间，单位为毫秒
+   continuous : true,       // 是否循环(即能从最后页跳到第一页面)
+   effect : {          // 滚动效果
+     transform : {
+      translate : 'Y',     // 'X'|'Y'|'XY'|'none' X轴|Y轴|XY轴|无
+      scale : [.1, 1],    // [scalefrom, scaleto] [起始缩放比例, 结束时缩放比例]
+      rotate : [0, 0]      // [rotatefrom, rotateto] [起始旋转角度, 结束时旋转角度]
+     },
+     opacity : [0, 1]      // [opacityfrom, opacityto][起始透明度, 结束时透明度]
+    },       
+   mode : 'wheel,touch',    // 转换模式 'wheel,touch,nav:navBar' 表示 '滚轮,触摸,导航条:导航条id'
+   easing : [0, .93, .39, .98],
+callback : function(index, thisPage) {     // callback when pageChange
+
+    if (index === 0) {
+        autoPlay(runPage.thisPage() + 1);
+    } else {
+        clearTimeout(interval);
+    }
+}
+  });
+
+  runSection = new FullPage({
+
+id : 'article',                            // id of contain
+slideTime : 1000, 
+continuous : true,                               // time of slide
+effect : {                                     // slide effect
+    transform : {
+        translate : 'X',					   // 'X'|'Y'|'XY'|'none'
+        scale : [0, 1],					   // [scalefrom, scaleto]
+        rotate : [0, 0]					   // [rotatefrom, rotateto]
+    },
+    opacity : [0, 1]                           // [opacityfrom, opacityto]
+},                           
+mode : 'touch,wheel',               // mode of fullpage
+easing : [0, .93, .39, .98],
+callback : function(index, thisPage) {     // callback when pageChange
+
+    if (index === 0) {
+        autoPlay(runPage.thisPage() + 1);
+    } else {
+        clearTimeout(interval);
+    }
+}
+});
+
+// interval = setTimeout(function() {
+// runPage.go(runPage.thisPage() + 1);
+// }, 500);
+
+
+        </script>
+    </body>
+</html>
