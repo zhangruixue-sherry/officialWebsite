@@ -74,7 +74,36 @@
         <script src="js/jquery-1.8.3.js"></script>
         <script src="js/public.js"></script>
         <script src="js/js.js" charset="UTF-8"></script>
+        <script src="js/jquery.pagination.js" charset="UTF-8"></script>
     <script>
+        $(function () {
+            new newsDate(1);
+            var total = localStorage.getItem("total");
+            //页面分页加载
+            var runCallback1 = null;
+            new dmm({
+                cssStyle:1,//控件样式
+                size: [5],//每页显示条数
+                container: "pageParent",//控件容器id
+                callback: function (e) {
+                    e.index;//当前页
+                    e.pageSize1;//页面显示条数
+                    //以上两个属性可以当作请求后台时传入的参数
+                    //以下三行在加载完页面后必须填写
+                    e.countpage = Math.ceil(total / e.pageSize1);//注意必写（数据总页数——通过后台方法获取）
+                    e.infocount = total;//注意必写（数据总条数——通过后台方法获取）
+                    xian(e);//注意必写（加载控件）
+                    runCallback1 = e;//将分页条件赋值变量
+                }
+            });
+
+            function dian()
+            {
+                runCallback1.index = 1;
+
+                hui(runCallback1);//执行此分页的回掉函数（请求后台获取数据的方法）
+            }
+        })
         //移动端移除分页总条数等内容
         window.onload = function () {
             var winW = $(window).width();

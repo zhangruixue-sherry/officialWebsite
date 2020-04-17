@@ -646,7 +646,10 @@
 
 @media (max-width: 480px) {
     /* 新闻资讯 */
-
+    .news_detail .title {
+        font-size: 18px;
+        line-height: 32px;
+    }
     .page_title span{
         color: #ffffff;
         font-size: 12px;

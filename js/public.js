@@ -52,35 +52,10 @@ $(function(){
     var newsList = [];
     var newsInfo = '';
     //新闻资讯
-    var current_url = window.location.pathname;
-    if(current_url.indexOf("news") >= 0 ) { 
-        new newsDate(1);
-        var total = localStorage.getItem("total");
-        //页面分页加载
-        var runCallback1 = null;
-            new dmm({
-                cssStyle:1,//控件样式            
-                size: [5],//每页显示条数           
-                container: "pageParent",//控件容器id
-                callback: function (e) {
-                    e.index;//当前页
-                    e.pageSize1;//页面显示条数
-                    //以上两个属性可以当作请求后台时传入的参数
-                    //以下三行在加载完页面后必须填写
-                    e.countpage = Math.ceil(total / e.pageSize1);//注意必写（数据总页数——通过后台方法获取）
-                    e.infocount = total;//注意必写（数据总条数——通过后台方法获取）
-                    xian(e);//注意必写（加载控件）
-                    runCallback1 = e;//将分页条件赋值变量
-                }
-            }); 
-    
-            function dian()
-            {
-                runCallback1.index = 1;
-    
-                hui(runCallback1);//执行此分页的回掉函数（请求后台获取数据的方法）
-            }
-    }
+    // var current_url = window.location.pathname;
+    // if(current_url.indexOf("news") >= 0 ) {
+    //
+    // }
 
 })
 
@@ -124,7 +99,7 @@ function newsDate(current){
                         '<p class="news_tite">'+value.title+'</p>\n'+
                         '<p class="news_date">'+value.created+'</p>\n'+
                         '<p class="news_text">'+value.content+'</p>\n'+
-                        '<a href="./news_detail.html?id='+value.id+'"><p class="news_btn">查看详情</p></a>\n'+
+                        '<a href="news_detail.html?id='+value.id+'"><p class="news_btn">查看详情</p></a>\n'+
                     '</div>\n'+
                 '</div>\n'
 
@@ -170,7 +145,6 @@ function news_detail(id){
         //请求成功
         success:function(res,status){
             if(res['errcode'] == 0) {
-                 
                 var value =res.data;
                 newsInfo = '<div><img style="width: 100%;" src="'+value.img+'"></div>\n'+
                     '<div>\n'+
@@ -180,7 +154,7 @@ function news_detail(id){
                     '</div>\n'
 
                 $(".news_detail").append(newsInfo);
-                console.log(res.data.records)
+                // console.log(res.data.records)
             }else{
                 alert(res['errmsg'])
             }
