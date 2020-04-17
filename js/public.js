@@ -124,7 +124,7 @@ function newsDate(current){
                         '<p class="news_tite">'+value.title+'</p>\n'+
                         '<p class="news_date">'+value.created+'</p>\n'+
                         '<p class="news_text">'+value.content+'</p>\n'+
-                        '<a href="file:///D:/officialWebsite/news_detail.html?id='+value.id+'" target="_blank"><p class="news_btn">查看详情</p></a>\n'+
+                        '<a href="./news_detail.html?id='+value.id+'"><p class="news_btn">查看详情</p></a>\n'+
                     '</div>\n'+
                 '</div>\n'
 
