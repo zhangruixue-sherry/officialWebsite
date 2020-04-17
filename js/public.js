@@ -190,7 +190,19 @@ function tijiao(){
     var email = $("#email").val();
     var message = $("#message").val();
     if(name == ''){
-        alert('请选择您姓名');
+        alert('请输入您的姓名。');
+            return false;
+    }
+    if(email == ''){
+        alert('请输入您的邮箱地址。');
+            return false;
+    }
+    if(mobile == ''){
+        alert('请输入您的电话。');
+            return false;
+    }
+    if(message == ''){
+        alert('请填写留言。');
             return false;
     }
     $.ajax({
