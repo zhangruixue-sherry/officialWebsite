@@ -26,18 +26,25 @@ $(function(){
         $("#cooperation_icon").attr("src","image/logo_icon_100.png");
     }else{
         $("#cooperation_icon").attr("src","image/logo_icon.png");
-    }    
+    }
+    $(".icon").click(function () {
 
-    $(".icon").toggle(
-        function() {
-            $(this).css("background-color", "rgba(255,255,255,0.5)");
-            $(".menu ul").slideDown(200);
-        },
-        function() {
-            $(this).css("background-color", "transparent");
-            $(".menu ul").slideUp(200);
-       }
-    );
+        if($(".menu ul").css('display') == 'none'){
+            $(".menu ul").slideDown();
+        }else{
+            $(".menu ul").slideUp();
+        }
+    });
+    // $(".icon").toggle(
+    //     function() {
+    //         $(this).css("background-color", "rgba(255,255,255,0.5)");
+    //         $(".menu ul").slideDown(200);
+    //     },
+    //     function() {
+    //         $(this).css("background-color", "transparent");
+    //         $(".menu ul").slideUp(200);
+    //    }
+    // );
     $(window).resize(function() {
         if($(this).width() < 768) $(".menu ul").show(500);    
     });
