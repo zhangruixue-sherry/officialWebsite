@@ -16,37 +16,37 @@ var cspath = cspath.substr(jsN); //最终js路径
 function getcsUrl(t,o) {
     $("head").append("<link>");
     css = $("head").children(":last");
-    if (o == 1) {
-        css.attr({
-            rel: "stylesheet",
-            type: "text/css",
-            href:  t + 'css1.css'
-        });
-    } else if (o == 2) {
-        css.attr({
-            rel: "stylesheet",
-            type: "text/css",
-            href: t + 'css2.css'
-        });
-    } else if (o == 3) {
-        css.attr({
-            rel: "stylesheet",
-            type: "text/css",
-            href:  t + 'css3.css'
-        });
-    } else if (o == 4) {
-        css.attr({
-            rel: "stylesheet",
-            type: "text/css",
-            href:  t + 'css4.css'
-        });
-    } else if (o == 5) {
-        css.attr({
-            rel: "stylesheet",
-            type: "text/css",
-            href:  t + 'css5.css'
-        });
-    }
+    // if (o == 1) {
+    //     css.attr({
+    //         rel: "stylesheet",
+    //         type: "text/css",
+    //         href:  t + 'css1.css'
+    //     });
+    // } else if (o == 2) {
+    //     css.attr({
+    //         rel: "stylesheet",
+    //         type: "text/css",
+    //         href: t + 'css2.css'
+    //     });
+    // } else if (o == 3) {
+    //     css.attr({
+    //         rel: "stylesheet",
+    //         type: "text/css",
+    //         href:  t + 'css3.css'
+    //     });
+    // } else if (o == 4) {
+    //     css.attr({
+    //         rel: "stylesheet",
+    //         type: "text/css",
+    //         href:  t + 'css4.css'
+    //     });
+    // } else if (o == 5) {
+    //     css.attr({
+    //         rel: "stylesheet",
+    //         type: "text/css",
+    //         href:  t + 'css5.css'
+    //     });
+    // }
 }
 
 //分页属性数组
@@ -160,6 +160,7 @@ function redire(obj, o) {
     new newsDate(obj.index);
     //跳转页面
     hui(obj);
+    var winW = $(window).width();
 }
 //跳转页面
 function rediretoheadindex(obj) {

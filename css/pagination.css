@@ -76,7 +76,9 @@
 
 @media (max-width: 480px) {
     .button{
-        margin-right: 22px;
+        margin-right: 5px;
+        font-size: 12px;
+        padding: 0 10px;
     }
 }
 

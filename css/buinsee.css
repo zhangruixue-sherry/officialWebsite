@@ -655,30 +655,35 @@
     .news_introduce {
         max-width: 1140px;
         margin: 0 auto;
-        padding: 40px 15px 15px 15px;
+        padding: 40px 0 15px 0;
     }
     
     .news_list{
         width: 100%;
-        padding: 15px;
+        padding:20px 15px;
         background: #ffffff;
-        margin-bottom: 20px;
-        height: 400px;
+        margin-bottom: 0;
+        height: auto;
+        box-sizing: border-box;
     }
     
     .news_img{
         width: 100%;
-        max-width: 248px;
+        /*max-width: 248px;*/
         margin-right: 15px;
+        float: none;
+        height: auto;
     }
     
     .news_info{
         width: 100%;
+        float: none;
+        margin-top: 10px;
     }
     .news_tite{
         color: #333333;
-        font-size: 18px;
-        line-height: 40px;
+        font-size: 16px;
+        line-height: 28px;
     }
     
     .news_date{

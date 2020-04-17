@@ -74,6 +74,16 @@
         <script src="js/jquery-1.8.3.js"></script>
         <script src="js/public.js"></script>
         <script src="js/js.js" charset="UTF-8"></script>
-        <script type="text/javascript" th:src="js/jquery.min.js}"></script>
+    <script>
+        //移动端移除分页总条数等内容
+        window.onload = function () {
+            var winW = $(window).width();
+            if(winW<768){
+                var button = $('#pageParent_page button');
+                $('#pageParent_page').html('');
+                $('#pageParent_page').append(button);
+            }
+        }
+    </script>
     </body>
 </html>    

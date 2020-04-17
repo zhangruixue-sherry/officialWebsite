@@ -91,6 +91,7 @@ function newsDate(current){
         },
         //请求成功
         success:function(res,status){
+            var winW = $(window).width();
             if(res['errcode'] == 0) {
                 localStorage.setItem("total", res.data.total);
 
@@ -121,6 +122,12 @@ function newsDate(current){
                 '</div>\n'
 
                 $(".news_introduce").append(newsInfo);
+
+                    if(winW<768){
+                        var button = $('#pageParent_page button');
+                        $('#pageParent_page').html('');
+                        $('#pageParent_page').append(button);
+                    }
                 });
 
                 
