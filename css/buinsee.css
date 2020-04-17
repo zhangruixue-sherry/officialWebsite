@@ -758,6 +758,21 @@
     }
 
 }
+@media (max-width: 320px) {
+    .form{
+        width: 78%;
+    }
+    .form input {
+        width: 230px;
+    }
+    .message textarea {
+        width: 250px;
+    }
+
+    .partner_icon img {
+        width: 120px;
+    }
+}
 
 
 
