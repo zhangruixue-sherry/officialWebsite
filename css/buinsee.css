@@ -526,9 +526,9 @@
         width: 50%;
     }
     .project_chid{
-        width: 100%;
+        width: 50%;
         margin: 0 auto;
-        float: none;
+        float: left;
         text-align: center;
         margin-bottom: 35px;
     }
@@ -538,6 +538,7 @@
     } 
     .project_title{
         text-align: center;
+        margin: 0 auto;
     }
     
     .banner .page_title{
@@ -715,7 +716,7 @@
     /* 商务合作 */
 
     .form {
-        margin: 50px 15px;
+        margin: 50px auto;
         padding: 20px;
         height: 460px;
         width: 85%;
@@ -759,6 +760,12 @@
         margin-right: 0px;
         float: none;
     }
+    .rent{
+        width: 75%;
+    }
+    .partner_icon img{
+        width: 90%;
+    }
 
 }
 @media (max-width: 320px) {
@@ -774,6 +781,9 @@
 
     .partner_icon img {
         width: 120px;
+    }
+    .rent{
+        width: 85%;
     }
 }
 
