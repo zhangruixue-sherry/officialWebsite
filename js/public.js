@@ -45,9 +45,9 @@ $(function(){
     //         $(".menu ul").slideUp(200);
     //    }
     // );
-    $(window).resize(function() {
-        if($(this).width() < 768) $(".menu ul").show(500);    
-    });
+    // $(window).resize(function() {
+    //     if($(this).width() < 768) $(".menu ul").show(500);
+    // });
     
     var newsList = [];
     var newsInfo = '';
