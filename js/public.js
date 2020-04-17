@@ -12,9 +12,9 @@ $(function(){
 
     if(980 < width_size && width_size < 1200) {
         $("#footer_img").attr("src","image/footer_1200.png");
-    }else if(768 < width_size && width_size < 980){
+    }else if(770 < width_size && width_size < 980){
         $("#footer_img").attr("src","image/footer_980.png");
-    }else if(480 < width_size && width_size < 768){
+    }else if(480 < width_size && width_size < 770){
         $("#footer_img").attr("src","image/footer_768.png");
     }else if(width_size < 480){
         $("#footer_img").attr("src","image/footer_480.jpg");
