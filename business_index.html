@@ -62,11 +62,11 @@
         /*以下样式用来设置slider样式，可自行修改*/
         .pages {
             position:fixed;
-            right: 12%;
+            right: 10%;
             top: 50%;
-            transform: translate(-50%,-50%);
-            -webkit-transform: translate(-50%,-50%);
-            -moz-transform: translate(-50%,-50%);
+            transform: translate(-50%,-40%);
+            -webkit-transform: translate(-50%,-40%);
+            -moz-transform: translate(-50%,-40%);
             list-style: none;
             width: 150px;
             height: 300px;
@@ -152,12 +152,12 @@
         }
             @media only screen and (max-width: 1500px) {
                 .pages{
-                    right:5%;
+                    right:3%;
                 }
             }
         @media only screen and (max-width: 1280px) {
             .pages{
-                right:-20px;
+                right:-5%;
             }
             .contetn{
                 max-width: 80%;
@@ -168,8 +168,11 @@
         }
         @media only screen and (max-width: 468px) {
             .pages{
-                right: -30px;
+                right: -10%;
                 top:55%;
+                width: 100px;
+                height: auto;
+                padding: 15px 0;
             }
             .pages li a{
                 font-size: 12px;
@@ -227,6 +230,14 @@
                 /*background-image: url(image/businsee_index2.png);*/
             /*}*/
         }
+            @media only screen and (max-width: 320px) {
+                .pages{
+                    right: -12%;
+                }
+                .contetn .index_induction{
+                    max-width: 55%;
+                }
+            }
         </style>
     </head>
     <body>
