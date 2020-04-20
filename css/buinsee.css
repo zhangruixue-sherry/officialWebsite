@@ -294,6 +294,9 @@
     margin: 10px auto 20px auto;
 }
 
+.project_chid img:hover{
+    transform: scale(1.1);
+}
 
 .project_chid p {
     color: #999999;
@@ -331,14 +334,20 @@
     line-height: 70px;
 }
 
-.infomation input{
+.infomation .form_input{
     width: 304px;
     height: 48px;
+    line-height: 48px;
     margin-bottom: 30px;
     color: #333333;
     font-size: 14px;
     padding-left: 21px;
     border: 1px solid #D4D4D4;
+    background-color: #ffffff;
+}
+
+.infomation input{
+    border: 0px;
 }
 
 .infomation .note{
@@ -433,9 +442,9 @@
     font-size: 15px;
     text-align: center;
     margin-top: 15px;
-    background-color: #E6E6E6;
     width: 100px;
     height: 30px;
+    border: 1px solid #E6E6E6;
 }
 
 .news_btn:hover{
@@ -618,14 +627,16 @@
         height: 170px;
     }
 
-    .form input {
+    .infomation .form_input{
         width: 250px;
         height: 33px;
+        line-height: 33px;
         margin-bottom: 20px;
         color: #333333;
         font-size: 14px;
         padding-left: 21px;
         border: 1px solid #D4D4D4;
+        background-color: #ffffff;
     }
     
     .form .btn{
@@ -733,10 +744,12 @@
         font-size: 14px;
         line-height: 50px;
     }
-    .infomation input{
+    .infomation .form_input{
         height: 28px;
+        line-height: 28px;
         margin-bottom: 15px;
     }
+    
     .message {
         width: 100%;
         height: 40%;
@@ -765,7 +778,7 @@
     .form{
         width: 78%;
     }
-    .form input {
+    .form .form_input {
         width: 230px;
     }
     .message textarea {

@@ -98,7 +98,7 @@ function newsDate(current){
                     '<div class="news_info">\n'+
                         '<p class="news_tite">'+value.title+'</p>\n'+
                         '<p class="news_date">'+value.created+'</p>\n'+
-                        '<p class="news_text">'+value.content+'</p>\n'+
+                        '<p class="news_text" style="color:#646464">'+value.content+'</p>\n'+
                         '<a href="news_detail.html?id='+value.id+'"><p class="news_btn">查看详情</p></a>\n'+
                     '</div>\n'+
                 '</div>\n'

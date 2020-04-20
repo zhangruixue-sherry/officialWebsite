@@ -64,7 +64,7 @@
 }
 .footer_conter .content{
     padding: 40px 0 20px 15px;
-    width: 60%;
+    width: 50%;
     float: left
 }
 .footer_conter h3{
@@ -201,6 +201,11 @@
         opacity: 0.9;
     }
 
+    .footer_conter .erwei img{
+        margin-bottom: 20px;
+        width: 130px;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -224,7 +229,7 @@
         text-align: center;
     }
     .footer_conter .erwei img{
-        margin-left: 20px;
+        margin-left: 10px;
         float: none;
         display: inline-block;
     } 
