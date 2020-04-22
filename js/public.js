@@ -35,27 +35,9 @@ $(function(){
             $(".menu ul").slideUp();
         }
     });
-    // $(".icon").toggle(
-    //     function() {
-    //         $(this).css("background-color", "rgba(255,255,255,0.5)");
-    //         $(".menu ul").slideDown(200);
-    //     },
-    //     function() {
-    //         $(this).css("background-color", "transparent");
-    //         $(".menu ul").slideUp(200);
-    //    }
-    // );
-    // $(window).resize(function() {
-    //     if($(this).width() < 768) $(".menu ul").show(500);
-    // });
     
     var newsList = [];
     var newsInfo = '';
-    //新闻资讯
-    // var current_url = window.location.pathname;
-    // if(current_url.indexOf("news") >= 0 ) {
-    //
-    // }
 
 })
 
@@ -93,15 +75,15 @@ function newsDate(current){
                         }
 
 
-                    newsInfo = '<div class="news_list">\n'+
+                    newsInfo = '<a href="news_detail.html?id='+value.id+'"><div class="news_list">\n'+
                     '<div class="news_img"><img style="width: 100%;" src="'+value.img+'"></div>\n'+
                     '<div class="news_info">\n'+
                         '<p class="news_tite">'+value.title+'</p>\n'+
                         '<p class="news_date">'+value.created+'</p>\n'+
                         '<p class="news_text" style="color:#646464">'+value.content+'</p>\n'+
-                        '<a href="news_detail.html?id='+value.id+'"><p class="news_btn">查看详情</p></a>\n'+
+                        '<p class="news_btn">查看详情</p>\n'+
                     '</div>\n'+
-                '</div>\n'
+                '</div></a>\n'
 
                 $(".news_introduce").append(newsInfo);
 

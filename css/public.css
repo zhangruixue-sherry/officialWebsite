@@ -19,7 +19,7 @@
     margin-right: 15px;
 }
 .logo a{
-    height: 140px;
+    height: 110px;
     display: block;
 }
 .logo a img{
@@ -29,7 +29,7 @@
 }
 .menu ul li{
     float:left;
-    height: 140px;
+    height: 110px;
     margin-left: 75px;
     font-size: 18px;
     color: #333333;
@@ -57,7 +57,7 @@
 }
 
 .main{
-    padding-top: 140px;
+    padding-top: 110px;
 }
 
 /*底部*/
