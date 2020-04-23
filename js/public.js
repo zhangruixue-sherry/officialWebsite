@@ -33,6 +33,7 @@ $(function(){
             $(".menu ul").slideDown();
         }else{
             $(".menu ul").slideUp();
+            
         }
     });
     
@@ -128,8 +129,7 @@ function news_detail(id){
         success:function(res,status){
             if(res['errcode'] == 0) {
                 var value =res.data;
-                newsInfo = '<div><img style="width: 100%;" src="'+value.img+'"></div>\n'+
-                    '<div>\n'+
+                newsInfo = '<div>\n'+
                         '<p class="title">'+value.title+'</p>\n'+
                         '<p class="date">'+value.created+'</p>\n'+
                         '<p class="content">'+value.content+'</p>\n'+

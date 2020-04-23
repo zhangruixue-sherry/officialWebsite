@@ -1,8 +1,7 @@
 body::-webkit-scrollbar {
-    width:0px; 
-    height:auto; 
-    background-color:transparent;
+    display: none;
 }
+
 .maxWh{
     width: 100%;
     max-width: 1200px;
@@ -20,9 +19,7 @@ body::-webkit-scrollbar {
 .logo {
     margin-left: 15px;
 }
-.menu {
-    margin-right: 15px;
-}
+
 .logo a{
     height: 110px;
     display: block;
@@ -30,7 +27,7 @@ body::-webkit-scrollbar {
 .logo a img{
     width: auto;
     height: 40px;
-    margin: 50px 0;
+    margin: 35px 0;
 }
 .menu ul li{
     float:left;
@@ -42,7 +39,7 @@ body::-webkit-scrollbar {
 .menu ul li a{
     display: block;
     height: 30px;
-    margin: 55px auto;
+    margin: 40px auto;
     line-height: 30px;
 }
 
@@ -183,35 +180,34 @@ body::-webkit-scrollbar {
         margin: 25px 0;
     }
     .menu{
-        margin-right: 0;
+        width: 100%;
     }
     .menu .icon{
         display: block;
-        margin: 25px 0;
+        margin: -65px 0;
         font-size: 28px;
         padding: 0 15px;
         position: inherit;
+        float: right;
     }
 
     .menu ul{
         position: absolute;
         top: 90px;
-        left:0;
-        right: auto;
         width: 100%;
-        display: none;
-        padding:0 15px;
         box-sizing: border-box;
         z-index: 9999;
-        background-color: #f5f5f5;
+        background-color: #336CEF;
+        text-align: center;
+        padding: 25px;
+        display: none;
     }
     .menu ul li{
         float:none;
         width: 100%;
-        text-align: left;
+        text-align: center;
         margin: 0;
-        height: auto;
-        border-top:1px solid #ccc;
+        height: 55px;
     }
     .menu ul li:first-child{
         border-top:0;
@@ -220,18 +216,21 @@ body::-webkit-scrollbar {
         display: block;
         width: 100%;
         height: 40px;
-        line-height: 55px;
-        color: #333;
-        font-size: 16px;
+        line-height: 40px;
+        color: #ffffff;
+        font-size: 18px;
         margin: 0 auto;
     }
     .menu ul li .current{
         font-size: 18px;
         text-decoration: none;
         border-bottom: 0;
+        color: #24E9FB;
+        border-bottom: 1px solid #24E9F8;
+        width: 15%;
     }
     .menu ul li:hover{
-        color:#176EFF;
+        color: #24E9FB;
         opacity: 0.9;
     }
     .main{
@@ -286,26 +285,38 @@ body::-webkit-scrollbar {
     }
     .menu .icon{
         display: block;
-        margin: 15px 0;
+        margin: -45px 0;
         font-size: 22px;
         padding: 0 15px;
         position: inherit;
+        float: right;
     }
 
     .menu ul{
         top: 60px;
+        display: none;
+    }
+    .menu ul li{
+        float:none;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        height: 45px;
     }
     .menu ul li a{
-        line-height: 40px;
-        color: #333;
-        font-size: 12px;
+        height: 35px;
+        line-height: 35px;
+        color: #ffffff;
+        font-size: 14px;
     }
     .menu ul li .current{
         font-size: 14px;
         text-decoration: none;
+        color: #24E9FB;
+        width: 25%;
     }
     .menu ul li:hover{
-        color:#176EFF;
+        color:#24E9FB;
         opacity: 0.9;
     }
 }

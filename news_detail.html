@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="css/buinsee.css">
     </head>
     <body>
-    <!-- <div class="header">
+    <div class="header" style="display: block;">
         <div class="maxWh clearfix">
             <div class="logo float_lf"><a href="#"><img src="image/logo.png" alt=""></a></div>
             <div class="menu float_rt">
@@ -26,9 +26,9 @@
                 <div class="icon">〓</div>
             </div>
         </div>
-    </div> -->
+    </div>
         <div class="main">
-            <div style="margin:15px 20px -20px 15px" onclick="javascript:history.go(-1);">
+            <div class="return_back" style="margin:15px 20px -20px 15px; display: none;" onclick="javascript:history.go(-1);">
                 <img style="width: 25px; float: left;" src="image/return.png">
                 <p style="line-height: 25px;">返回上一页</p>
             </div>
@@ -43,6 +43,14 @@
             var val = url.split("=");
             var id= val[1]
             new news_detail(id);
+
+            window.onload = function () {
+            var winW = $(window).width();
+            if(winW<778){
+                $(".header").toggle();
+                $(".return_back").toggle();
+            }
+        }
         </script>
     </body>
 </html>
